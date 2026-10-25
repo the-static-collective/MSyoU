@@ -6,7 +6,7 @@
 
 A community partner proposes one useful, legitimate task. Owners of ordinary computers may voluntarily offer bounded spare capabilities, time, power and energy. A planner can ask which offered machine can reasonably do the work. The owner always decides whether to accept. The system must also be allowed to answer **HOLD** when capacity, power, consent or evidence is missing.
 
-The local demonstration at [resources/](../resources/) uses invented computers and invented jobs, and returns either `CANDIDATE_ONLY` or `HOLD`. It does **not** discover devices, run workloads, collect live measurements, transmit files, or create resource leases.
+The local demonstration at [resources/](../resources/index.html) uses invented computers and invented jobs, and returns either `CANDIDATE_ONLY` or `HOLD`. It does **not** discover devices, run workloads, collect live measurements, transmit files, or create resource leases.
 
 ## The existing GHoT organs
 
