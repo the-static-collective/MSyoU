@@ -41,6 +41,12 @@ We also built a [fictional, local-only resource planner](../resources/index.html
 
 No campus devices, electricity, networks, students, or protected data are enrolled. A real experiment would require owner and institutional authorization first.
 
+## Thin, intermittent discovery: Morse Cone 001
+
+[**Morse Cone signal lab**](../radio/) now tests a different possible control plane: a very small, untrusted discovery token transmitted only within a fictional browser channel, then explicitly held rather than treated as authorization. A clean decode, corrupted timing, a collision, and non-reception have distinct, inspectable results. The A/N overlap and overhead-gap demonstration is a deliberately schematic teaching model, not measured radio propagation.
+
+The [technical note](MORSE-CONE-001.md) maps this to our actual receive-only GHoT RADIO-EAR/ATTENTION proposals, Radio House signed-work and TranchNOSE's symbol/echo-clock distinction. It does **not** connect MSU machines, transmit radio, identify a physical endpoint, run GHoT, or establish RF source identity.
+
 ## A two-week local pilot
 
 Choose **one** host and **one** bounded project. Example: a grocery-organizing working group has a specific volunteer or producer outreach question.
