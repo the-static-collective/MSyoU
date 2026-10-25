@@ -1,9 +1,9 @@
 // Zero-dependency loopback-only static server. Never binds a public network interface.
 import { createServer } from "node:http";
 import { readFile, stat } from "node:fs/promises";
-import { join, normalize, extname, sep } from "node:path";
+import { join, normalize, extname, sep, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
-const root = fileURLToPath(new URL("../", import.meta.url));
+const root = resolve(fileURLToPath(new URL("../", import.meta.url)));
 const types = {".html":"text/html; charset=utf-8",".js":"text/javascript; charset=utf-8",".mjs":"text/javascript; charset=utf-8",".css":"text/css; charset=utf-8",".json":"application/json; charset=utf-8",".md":"text/plain; charset=utf-8"};
 const port = Number(process.env.PORT || 8080);
 const server = createServer(async (req, res) => {
