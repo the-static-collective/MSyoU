@@ -1,0 +1,56 @@
+name: Two-body native GHoT verification
+on:
+  push:
+    paths:
+      - '.github/workflows/two-body-proof.yml'
+      - 'docs/TWO-BODY-FIELD-003.md'
+      - 'field/**'
+      - 'README.md'
+  pull_request:
+    paths:
+      - '.github/workflows/two-body-proof.yml'
+      - 'docs/TWO-BODY-FIELD-003.md'
+      - 'field/**'
+      - 'README.md'
+permissions:
+  contents: read
+jobs:
+  ghotsigned:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Source checkout (MSyoU)
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          path: msyou
+      - name: Pinned native GHoT donor checkout
+        uses: actions/checkout@v4
+        with:
+          repository: the-static-collective/GHoT
+          ref: 91efe8441a567944dff27e1206d4967876485dbd
+          persist-credentials: false
+          path: ghot
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Assert exact donor source
+        working-directory: ghot
+        run: |
+          test "$(git rev-parse HEAD)" = "91efe8441a567944dff27e1206d4967876485dbd"
+          test -f ghot/radio_house_004.py
+      - name: Run native 001–003 power, consent, signed-courier tests
+        working-directory: ghot
+        run: |
+          python3 -m unittest discover -s tests -p 'test_radio_house_001.py' -v
+          python3 -m unittest discover -s tests -p 'test_radio_house_002.py' -v
+          python3 -m unittest discover -s tests -p 'test_radio_house_003.py' -v
+      - name: Prove native 004 two-process localhost signed transport
+        working-directory: ghot
+        run: python3 -m unittest discover -s tests -p 'test_radio_house_004.py' -v
+      - name: Record only software-test scope
+        run: |
+          echo 'GHOT_004_DONOR_TESTS=PASSED'
+          echo 'PHYSICAL_TWO_COMPUTERS=NOT_TESTED'
+          echo 'CAMPUS_DEVICES=NOT_USED'
+          echo 'RF_SIGNAL=NOT_USED'
