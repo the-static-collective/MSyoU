@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="MSyoU Morse Cone: a local-only, no-account, simulated discovery signal for voluntary distributed computing.">
+<title>Morse Cone 001 · MSyoU</title><link rel="stylesheet" href="../style.css"><script type="module" src="ui.mjs"></script>
+<style>
+.radio-hero{background:radial-gradient(circle at 78% 28%,#386151,transparent 45%),#103126;color:#fff;padding:68px 0 76px;border-bottom:9px solid #aac29c}
+.radio-hero h1{max-width:900px}.radio-hero em{color:#f1d17b}.sub{font-size:1.15rem;max-width:800px;color:#e2f1e6}
+.radio-notice{margin-top:-26px;position:relative;background:#fff4d7;border-left:6px solid #a4552e;padding:18px 23px;font-size:14px;box-shadow:0 5px 12px #183c2225}
+.rack{display:grid;grid-template-columns:1fr 1fr;gap:18px}.instrument{background:#fffdf6;border:1px solid #abbeab;box-shadow:4px 6px 0 #80998633;padding:25px;min-width:0}
+.instrument h3{font:600 1.8rem Georgia,serif}.instrument label{display:block;font-weight:750;font-size:13px;margin:14px 0 6px}
+.instrument select,.instrument input[type=range]{width:100%}.instrument select{background:#fff;color:#102e27;padding:12px;border:1px solid #7d9a82}
+.tape{background:#0c2821;color:#f0d97e;border:1px solid #416951;font:700 14px/1.5 ui-monospace,monospace;padding:16px;overflow-wrap:anywhere}
+.tape small{color:#d1e2cb;font-weight:400}.bits{word-break:break-all;overflow-wrap:anywhere;font:12px ui-monospace,monospace;background:#f0f4e9;border:1px solid #afc3ad;padding:13px;max-height:125px;overflow:auto}
+.outputs{background:#dbe8dc;border-block:1px solid #a3bca8}.outcome{font:800 19px/1.35 ui-monospace,monospace;margin:10px 0;padding:15px;background:#e9f1e4;border-left:5px solid #2d684b;overflow-wrap:anywhere}
+.bad{border-left-color:#a64e33;background:#f5e5dc}.pill{display:inline-block;border:1px solid #87a48b;padding:3px 8px;font:800 12px ui-monospace,monospace;margin:4px 4px 4px 0}
+.result-note{font-size:14px}.fields{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.cones{display:flex;align-items:center;gap:16px;margin-top:14px}.cone-track{flex:1;background:#d5dfd2;border:1px solid #91ad95;height:22px;overflow:hidden}
+.cone-fill{height:100%;background:#426f50;width:50%}.cone-n{background:#a2653a}
+.checkbox{display:flex!important;align-items:center;gap:10px}.checkbox input{height:19px;width:19px}
+.memo{padding:24px;background:#1d4335;color:#eaf0e6;font:15px/1.55 ui-monospace,monospace}.memo strong{color:#f4d480}.links{display:flex;flex-wrap:wrap;gap:14px;font-size:14px;margin-top:23px}.links a{font-weight:800}
+@media(max-width:790px){.rack,.fields{grid-template-columns:1fr}.radio-hero{padding:45px 0 60px}}
+</style></head>
+<body><a class="skip" href="#main">Skip to content</a>
+<div class="ribbon">MSyoU × GHoT × TRANCHNOSE <span>MORSE CONE / 001 / SYNTHETIC ONLY</span></div>
+<header class="mast wrap"><a class="mark" href="../">MS<span>yo</span>U <i>↗</i></a><nav aria-label="Site"><a href="../">The community table</a><a href="../resources/">Energy Commons</a><a href="#lab">Signal lab</a><a href="../docs/MORSE-CONE-001.md">Field protocol</a></nav></header>
+<main id="main"><section class="radio-hero"><div class="wrap"><p class="eyebrow">THE RADIO THAT KNOWS THE DIFFERENCE BETWEEN HEARING AND AGREEING</p>
+<h1>Send a little signal.<br><em>Not a command.</em></h1>
+<p class="sub">What if a computer could announce a small discovery token through a weak or intermittent channel—and the receiver could keep its own choice about what happens next?</p>
+<a class="button primary" href="#lab">Try a fictional crossing ↗</a></div></section>
+<div class="wrap radio-notice"><b>This is not a radio transmitter.</b> All Morse marks, frequencies, positions, receiver states and resource references are simulated locally in this browser. No RF, device, LAN, optical link, real hardware enrollment, or university connection is made.</div>
+<section class="section wrap" id="lab"><p class="eyebrow ink">FIELD SPECIMEN / EMISSION ≠ RECEPTION</p><h2>One sender. <em>One receiver.</em></h2>
+<p class="measure">The sender constructs a short identifier with an error-detection check. It is converted into conventional dot-and-dash timing. A simulated channel may pass, damage, collide with, or entirely lose the marks. The receiving side never treats successful decoding as authenticated identity or permission.</p>
+<div class="rack">
+<div class="instrument"><h3>01 · Sender / the proposal</h3><p class="small">Fictional signal from a node voluntarily announcing its own existence.</p>
+<div class="tape" id="frame">MC1 NODE01 A13F ...</div><label for="channel">Choose a synthetic channel condition</label>
+<select id="channel"><option value="clear">Clear — every timing mark survives</option><option value="weak">Damaged — a mark is corrupted</option><option value="collision">Collision — signals overlap, undecodable</option><option value="unreachable">No path — receiver makes no observation</option></select>
+<button id="send" type="button">Simulate one transmission →</button><p class="small">A checksum detects some corruption; it is not a digital signature. No real signal leaves this page.</p>
+</div>
+<div class="instrument"><h3>02 · Receiver / the observation</h3><p class="label">RECEPTION CLASSIFICATION</p><div class="outcome" id="status" role="status" aria-live="polite">NOT OBSERVED YET</div>
+<p class="result-note" id="explain">Choose a channel and simulate one crossing.</p><div class="tape" id="receipt">HOLD / no receiver acceptance</div>
+<button id="lookup" type="button" disabled>Look up local fictional catalog</button><p class="small" id="lookupOut">Even a matching source token is not independently authenticated.</p>
+</div></div>
+<p class="eyebrow ink" style="margin-top:28px">THE KEYED RHYTHM</p><div class="bits" id="pulse" aria-label="Morse pulses as binary mark and gap units"></div>
+</section>
+<section class="section outputs"><div class="wrap"><p class="eyebrow ink">THE CONE OF ATTENTION / SIMPLIFIED TOY MODEL</p><h2>Same air. <em>Different positions.</em></h2>
+<p class="measure">Early A/N radio navigation used complementary Morse signals; their balance could convey a bearing sector. Overhead station geometry could create a cone of silence. This drawing is **not** a propagation model, usable navigation instrument, or physical measurement.</p>
+<div class="fields"><div class="instrument"><label for="position">Fictional receiver position: <output id="positionOut">0</output></label>
+<input id="position" type="range" min="-100" max="100" step="1" value="0">
+<label class="checkbox"><input type="checkbox" id="overhead"> Imagined overhead blind region</label>
+<div class="cones"><span>A · −</span><div class="cone-track"><div class="cone-fill" id="aBar"></div></div><strong id="aValue">50</strong></div>
+<div class="cones"><span>N − ·</span><div class="cone-track"><div class="cone-fill cone-n" id="nBar"></div></div><strong id="nValue">50</strong></div></div>
+<div class="instrument"><h3>Relational observation</h3><div id="coneState" class="outcome">OVERLAP</div><p id="coneMeaning">Toy weighting only.</p><p class="small">No radio frequency, antenna pattern, distance, angle, geolocation, or received signal strength is computed here.</p></div></div>
+</div></section>
+<section class="section wrap"><p class="eyebrow ink">THREE SEPARATE DECISIONS</p><h2>Discovery is <em>not dispatch.</em></h2>
+<div class="three">
+<article><div class="num">SIGNAL</div><h3>Something was sent</h3><p>A pulse pattern and checksum identify a claim that someone tried to broadcast.</p></article>
+<article><div class="num">OBSERVATION</div><h3>Something might be heard</h3><p>Loss, interference, channel gaps and decode failure are recorded without pretending they didn't happen.</p></article>
+<article><div class="num">AUTHORITY</div><h3>Somebody still decides</h3><p>A human and authenticated resource owner must independently approve any actual GHoT work. This demonstration never does.</p></article>
+</div><div class="links"><a href="../resources/">Energy Commons demo ↗</a><a href="../docs/MORSE-CONE-001.md">Experiment protocol ↗</a><a href="https://github.com/the-static-collective/tranchNOSE/blob/main/RESEARCH_NOTE_CELESTIAL_DELAY_WITNESS.md">TranchNOSE research ↗</a></div></section>
+<section class="section" style="background:#13352b;color:white"><div class="wrap"><p class="eyebrow">THE FOUNDATION</p><h2>The message may arrive.<br><em>The machine remains sovereign.</em></h2><div class="memo"><strong>BEACON ≠ TRUST</strong><br>DETECTION ≠ DECODING<br>DECODING ≠ AUTHENTICATION<br>AUTHENTICATION ≠ ACCEPTANCE<br>ACCEPTANCE ≠ EXECUTION<br>FIELD GEOMETRY ≠ NAVIGATION FIX</div></div></section>
+</main><footer class="wrap"><strong>MSyoU / Morse Cone 001</strong><p>One little signal. One bounded observation. No borrowed authority.</p><small>Independent Static Collective research, not affiliated with or endorsed by MSU Mankato.</small></footer>
+</body></html>
