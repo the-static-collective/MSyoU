@@ -35,6 +35,12 @@ Source-and-proof annotations: [SOURCE-ATLAS](SOURCE-ATLAS.md). These are experim
 
 This is a question, not a promised result. It is suitable for an opt-in civic technology, HCI, social research, accessibility or systems interoperability discussion if interested participants and institutional processes make that appropriate.
 
+## Hardware and energy frontier: GHoT Energy Commons
+
+We also built a [fictional, local-only resource planner](../resources/index.html) that asks how independent hardware owners might volunteer spare CPU capacity for bounded community work. It models owner opt-in, heterogeneous capability, battery/temperature, estimated power and energy budgets and a transparent **candidate or HOLD** disposition. The [GHoT source-boundary protocol](GHOT-ENERGY-COMMONS.md) names the native components and the permissions missing for any genuine device participation.
+
+No campus devices, electricity, networks, students, or protected data are enrolled. A real experiment would require owner and institutional authorization first.
+
 ## A two-week local pilot
 
 Choose **one** host and **one** bounded project. Example: a grocery-organizing working group has a specific volunteer or producer outreach question.

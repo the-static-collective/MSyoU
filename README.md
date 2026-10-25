@@ -30,6 +30,10 @@ npm run serve
 # open http://localhost:8080
 ```
 
+## Energy Commons × GHoT
+
+[**Try the fictional spare-compute and energy-routing demonstration**](resources/index.html). It protects volunteered capacity with owner opt-in, capabilities, battery, thermal and declared Wh budgets. It proposes a candidate or HOLD; it never accesses devices or executes work. [GHoT integration design and field gates](docs/GHOT-ENERGY-COMMONS.md).
+
 ## The working hypothesis
 
 One small **community coordination membrane** may be reusable across several local efforts: community grocery organizing, Coalition convenings, stewardship work, event invitations, local mutual aid, and (only with an actual invitation) campus–community collaboration.
@@ -52,6 +56,7 @@ One small **community coordination membrane** may be reusable across several loc
 - [Source and branch atlas](docs/SOURCE-ATLAS.md) — exact projects, branches, evidence and limits.
 - [Pilot contract](docs/FIELD-PILOT.md) — scope, consent, measures, stop conditions, public output.
 - [Architecture and field-card protocol](docs/ARCHITECTURE.md) — the real runnable slice.
+- [GHoT Energy Commons](docs/GHOT-ENERGY-COMMONS.md) — voluntary resource federation frontier and interactive simulation.
 - [A possible follow-up message](docs/CONTACT-NOTE.md) — **draft only; not sent**.
 
 **Architecture principle:** a proposal is not admission; receipt is not proof of physical completion; invitation is not enrollment; a university conversation is not a university partnership.
