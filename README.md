@@ -38,6 +38,12 @@ npm run serve
 
 [**Try the fictional Morse/radio discovery experiment**](radio/). It generates a fixed checksum-checked Morse presence token, simulates reception, corruption, collision and no path, and protects the receiver's right to HOLD. The local lookup is explicitly untrusted and cannot enqueue or execute GHoT work. The [source-linked protocol](docs/MORSE-CONE-001.md) traces its National Treasure, TranchNOSE, radio-ear and Radio House roots.
 
+## TWO-BODY FIELD 003 — the native two-computer proof
+
+[**Open the two-body field station**](field/). This adds a source-pinned operator runbook and CI that executes the **actual GHoT RADIO HOUSE 004 native two-process test suite** (two separately keyed worker/requester localhost processes, signed proposal, operator approval, bounded hash, signed return). The source owner and worker local approval remain independent; no simulated Morse label becomes authority. A genuine **two physical machine trial remains unperformed** until separate owners install and approve on their hardware.
+
+[Detailed step-by-step field protocol](docs/TWO-BODY-FIELD-003.md) · [GHoT donor implementation](https://github.com/the-static-collective/GHoT/tree/experiment/radio-house-004-clicky-lan).
+
 ## The working hypothesis
 
 One small **community coordination membrane** may be reusable across several local efforts: community grocery organizing, Coalition convenings, stewardship work, event invitations, local mutual aid, and (only with an actual invitation) campus–community collaboration.
@@ -60,6 +66,7 @@ One small **community coordination membrane** may be reusable across several loc
 - [Source and branch atlas](docs/SOURCE-ATLAS.md) — exact projects, branches, evidence and limits.
 - [Pilot contract](docs/FIELD-PILOT.md) — scope, consent, measures, stop conditions, public output.
 - [Architecture and field-card protocol](docs/ARCHITECTURE.md) — the real runnable slice.
+- [Two-body Field 003](docs/TWO-BODY-FIELD-003.md) — pinned GHoT native test workflow and [human-owned field-station page](field/).
 - [Morse Cone 001](docs/MORSE-CONE-001.md) — distinct signal, observation, interpretation, and authority, with a [fictional signal lab](radio/).
 - [GHoT Energy Commons](docs/GHOT-ENERGY-COMMONS.md) — voluntary resource federation frontier and interactive simulation.
 - [A possible follow-up message](docs/CONTACT-NOTE.md) — **draft only; not sent**.
