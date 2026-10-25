@@ -1,0 +1,14 @@
+{
+  "name": "msyou-civic-field-kit",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Independent local-only civic handoff field kit",
+  "scripts": {
+    "test": "node --test",
+    "serve": "node scripts/serve.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
