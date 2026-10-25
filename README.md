@@ -34,6 +34,10 @@ npm run serve
 
 [**Try the fictional spare-compute and energy-routing demonstration**](resources/index.html). It protects volunteered capacity with owner opt-in, capabilities, battery, thermal and declared Wh budgets. It proposes a candidate or HOLD; it never accesses devices or executes work. [GHoT integration design and field gates](docs/GHOT-ENERGY-COMMONS.md).
 
+## Morse Cone 001 — the thin discovery channel
+
+[**Try the fictional Morse/radio discovery experiment**](radio/). It generates a fixed checksum-checked Morse presence token, simulates reception, corruption, collision and no path, and protects the receiver's right to HOLD. The local lookup is explicitly untrusted and cannot enqueue or execute GHoT work. The [source-linked protocol](docs/MORSE-CONE-001.md) traces its National Treasure, TranchNOSE, radio-ear and Radio House roots.
+
 ## The working hypothesis
 
 One small **community coordination membrane** may be reusable across several local efforts: community grocery organizing, Coalition convenings, stewardship work, event invitations, local mutual aid, and (only with an actual invitation) campus–community collaboration.
@@ -56,6 +60,7 @@ One small **community coordination membrane** may be reusable across several loc
 - [Source and branch atlas](docs/SOURCE-ATLAS.md) — exact projects, branches, evidence and limits.
 - [Pilot contract](docs/FIELD-PILOT.md) — scope, consent, measures, stop conditions, public output.
 - [Architecture and field-card protocol](docs/ARCHITECTURE.md) — the real runnable slice.
+- [Morse Cone 001](docs/MORSE-CONE-001.md) — distinct signal, observation, interpretation, and authority, with a [fictional signal lab](radio/).
 - [GHoT Energy Commons](docs/GHOT-ENERGY-COMMONS.md) — voluntary resource federation frontier and interactive simulation.
 - [A possible follow-up message](docs/CONTACT-NOTE.md) — **draft only; not sent**.
 
