@@ -62,6 +62,10 @@ The radio lab can also be served as static files; the production deploy is a sou
 | [planZ physical internet](https://github.com/the-static-collective/planZ/blob/proposal/master-servant-field-score-001/plans/2026-10-11-master-servant-physical-internet-001.md) | Proposed carrier-neutral reference / receipt protocol | No universal transport or live accepted schema |
 | [MSyoU Energy Commons](../resources/) | Consent/thermal/battery-aware scheduling rehearsal | No actual GHoT node enrollment or execution |
 
+## The separate native two-body station
+
+The first executable public field kit is now [TWO-BODY FIELD 003](../field/), with a pinned GHoT 004 native workflow test and detailed two-owner procedure. It is intentionally a *wired/private-network* proof. It **does not** use decoded Morse tokens as trusted credentials or set up an RF transmitter.
+
 ## Real field proof ladder
 
 **0. Present / now:** one browser, two fictional roles, structured decoding and failure states. Falsify bad claims and reject untrusted identifiers.
