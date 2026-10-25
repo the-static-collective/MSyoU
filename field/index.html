@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="A two-computer field protocol for independently approved native GHoT signed useful work.">
+<title>Two Bodies, One Small Job · MSyoU</title><link rel="stylesheet" href="../style.css">
+<style>
+.hero-field{padding:72px 0 83px;background:radial-gradient(circle at 79% 27%,#386a53,transparent 43%),#102e27;color:#fff;border-bottom:10px solid #e1cf91}
+.hero-field h1{font-size:clamp(3rem,7vw,5.9rem)}.hero-field em{color:#efcd81}.intro{max-width:740px}
+.warning{padding:22px 26px;margin-top:-30px;position:relative;background:#fff2d1;border-left:6px solid #a55430;box-shadow:6px 8px #34534420}
+.columns{display:grid;grid-template-columns:1fr 1fr;gap:17px;margin:30px 0}
+.body-card{background:#fffdf7;border:1px solid #aebfad;padding:25px;box-shadow:5px 6px #809e8e40}
+.body-card h3{font:600 1.9rem Georgia,serif}.body-card .role{font:900 12px ui-monospace,monospace;color:#a5532c}
+.workline{border-top:1px solid #cad8ca;padding:12px 0;font-size:14px}.workline strong{display:block}
+.steps{counter-reset:step}.step{counter-increment:step;display:grid;grid-template-columns:55px 1fr;gap:12px;padding:25px 0;border-top:1px solid #becdb9}
+.step:before{content:counter(step,decimal-leading-zero);font:bold 28px Georgia,serif;color:#a95c34}.step h3{font:600 1.6rem Georgia,serif;margin:0 0 6px}.step p{margin:0}
+.code{background:#112e25;color:#e1f1dc;white-space:pre-wrap;overflow-wrap:anywhere;padding:16px;border:1px solid #335f45;font:12px/1.55 ui-monospace,monospace}
+.proof{background:#e3ede0;border-block:1px solid #aebcae}.proof-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.proof-grid article{background:#fffdf6;padding:24px;border-top:4px solid #32634a}.proof-grid span{font:900 12px ui-monospace,monospace;color:#a95c34}
+.disclaimer{background:#15372b;color:white;padding:64px 0}.disclaimer h2 em{color:#ebd183}
+@media(max-width:740px){.columns,.proof-grid{grid-template-columns:1fr}.step{grid-template-columns:42px 1fr}.hero-field{padding:44px 0 65px}}
+</style></head><body><a class="skip" href="#main">Skip to content</a>
+<div class="ribbon">THE STATIC COLLECTIVE / MSyoU <span>FIELD 003 · NO DEVICES ENROLLED</span></div>
+<header class="mast wrap"><a class="mark" href="../">MS<span>yo</span>U <i>↗</i></a><nav><a href="../">Home</a><a href="../radio/">Morse Cone</a><a href="../resources/">Energy Commons</a><a href="../docs/TWO-BODY-FIELD-003.md">Complete runbook</a></nav></header>
+<main id="main"><section class="hero-field"><div class="wrap"><p class="eyebrow">FROM DIAGRAM TO DEFENSIBLE MACHINE EXPERIMENT</p>
+<h1>Two computers.<br><em>One tiny job.</em></h1>
+<p class="intro">An independent requester asks another independent computer to hash a short public string. The receiving computer can ignore, refuse, hold, approve, stop, or return a signed and independently verified result.</p>
+<a class="button primary" href="../docs/TWO-BODY-FIELD-003.md">Open the full field protocol ↗</a></div></section>
+<div class="warning wrap"><b>THIS PAGE DOES NOT START OR ACCESS ANY HARDWARE.</b> The native two-process GHoT software is testable; a real two-machine trial still needs two explicitly consenting owners, Linux computers, independent key verification and a private authorized connection. No university devices or systems are involved.</div>
+<section class="section wrap"><p class="eyebrow ink">THE GOVERNING SHAPE</p><h2>The requester's purpose.<br><em>The worker's permission.</em></h2>
+<div class="columns"><article class="body-card"><span class="role">BODY A · REQUESTER</span><h3>“May this be done?”</h3><div class="workline"><strong>Local source identity</strong>P-256 signing key stays local; only public identity is shared.</div><div class="workline"><strong>Harmless payload</strong>One public ASCII string and one allowlisted hash capability.</div><div class="workline"><strong>Authenticated proposal</strong>Sent only to a separately verified and pinned worker through authorized private connectivity.</div><div class="workline"><strong>Independent verification</strong>Recompute the hash and validate the worker's signed response.</div></article>
+<article class="body-card"><span class="role">BODY B · VOLUNTARY WORKER</span><h3>“I may say no.”</h3><div class="workline"><strong>Its own local identity</strong>Its own private key and authenticated requester allowlist.</div><div class="workline"><strong>Default HOLD</strong>Receiving a signed proposal does not start execution.</div><div class="workline"><strong>Local consent and resource gate</strong>Owner explicitly enables and approves; media, power, and safety retain priority.</div><div class="workline"><strong>Bounded execution</strong>Hash in short checkpoints; can withdraw permission. No arbitrary command execution.</div></article></div>
+</section>
+<section class="section proof"><div class="wrap"><p class="eyebrow ink">WHAT HAS ACTUALLY BEEN TESTED</p><h2>Evidence has <em>degrees.</em></h2><div class="proof-grid">
+<article><span>SOFTWARE / PINNED</span><h3>Native GHoT proof</h3><p>MSyoU's CI reuses the original GHoT two-process localhost test suite, pinned to one exact source SHA.</p></article>
+<article><span>HUMAN FIELD / PENDING</span><h3>Two physical bodies</h3><p>Requires two independently controlled Linux computers, a restricted SSH tunnel, explicit owner approval, sensor availability and a witnessed result.</p></article>
+<article><span>RADIO / PENDING</span><h3>Different carrier</h3><p>Morse Cone remains synthetic. No radio transmission, optical link, or RF evidence is claimed.</p></article>
+</div></div></section>
+<section class="section wrap"><p class="eyebrow ink">THE OPERATOR'S SEQUENCE</p><h2>Prepare the crossing.<br><em>Leave permission local.</em></h2><div class="steps">
+<div class="step"><div><h3>Choose the machines</h3><p>Two owned or expressly authorized Linux systems. Both operators know what the experiment will do. No campus or ministry resources are assumed available.</p></div></div>
+<div class="step"><div><h3>Install the pinned native experimental software</h3><p>The operator independently obtains the inspected GHoT source and selects the exact RADIO HOUSE 004 commit.</p><pre class="code">git clone https://github.com/the-static-collective/GHoT.git
+cd GHoT
+git fetch origin experiment/radio-house-004-clicky-lan
+git checkout --detach 91efe8441a567944dff27e1206d4967876485dbd
+python3 -m unittest discover -s tests -p 'test_radio_house_004.py' -v</pre></div></div>
+<div class="step"><div><h3>Exchange verified public identities</h3><p>Requester and worker each generate their own key, share only the public part and verify fingerprints by an independent trusted route. No private keys enter MSyoU.</p></div></div>
+<div class="step"><div><h3>Agree on a narrow network path</h3><p>Use an administrator-reviewed SSH forwarding-only account. Never publicly expose the worker's owner dashboard. The native worker binds only to loopback interfaces.</p></div></div>
+<div class="step"><div><h3>Offer one tiny public task</h3><p>Requester sends an exact signed GHoT proposal. The worker inbox records PENDING; no computation begins on receipt.</p></div></div>
+<div class="step"><div><h3>Worker owner decides</h3><p>On its own computer, the worker operator checks media status and power conditions, then explicitly approves and advances. Missing evidence means HOLD.</p></div></div>
+<div class="step"><div><h3>Inspect the result</h3><p>Requester independently verifies the signed result and hash. Record failures, refusals, withdrawal and real sensor conditions. Do not confuse test completion with energy saved or institutional approval.</p></div></div></div>
+<p><a class="button primary" href="../docs/TWO-BODY-FIELD-003.md" style="background:#153b2b;color:white;border-color:#153b2b">Full executable operator runbook ↗</a></p></section>
+<section class="disclaimer"><div class="wrap"><p class="eyebrow">THE NEXT RIGHT PROOF</p><h2>One signed proposal.<br><em>One free receiver.</em></h2><p>After the authorized private-LAN trial proves meaningful native behavior on two independent machines, we can investigate whether a separate low-bandwidth optical or legally authorized radio beacon contributes useful discovery under real dropouts. First make the safe pathway true.</p></div></section></main>
+<footer class="wrap"><strong>MSyoU / Field 003</strong><p><a href="../">Back to the table</a> · <a href="../radio/">Morse Cone</a> · <a href="../resources/">Energy Commons</a></p><small>Not an MSU service, endorsement or approved campus infrastructure deployment.</small></footer></body></html>
