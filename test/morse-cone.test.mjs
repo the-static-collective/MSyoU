@@ -26,7 +26,7 @@ test("corrupt checksums, stale frames and unsupported message shapes refuse",()=
  assert.equal(parseBeacon("MC1 NODE01 A13F "+frame.slice(-4)+" EXECUTE").ok,false);
  assert.throws(()=>makeBeacon("longerid","A13F"));
  assert.throws(()=>makeBeacon("NODE01","random"));
- assert.throws(()=>toMorseBits("DROP TABLE"));
+ assert.throws(()=>toMorseBits("DROP TABLE!"));
  assert.throws(()=>fromMorseBits("10100000000"));
  assert.throws(()=>fromMorseBits("11111"));
 });
