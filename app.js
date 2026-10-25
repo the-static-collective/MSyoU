@@ -12,7 +12,7 @@ const prepare = document.querySelector("#prepare");
 const exportBtn = document.querySelector("#export");
 const clearBtn = document.querySelector("#clear");
 const fiction = document.querySelector("#fiction");
-let card = null; // Deliberately session-memory only: no localStorage, accounts or server requests.
+let card = null; // Deliberately session-memory only: no persistence, accounts or server requests.
 
 function now() { return new Date().toISOString(); }
 function identifier() {
