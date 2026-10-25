@@ -47,6 +47,10 @@ No campus devices, electricity, networks, students, or protected data are enroll
 
 The [technical note](MORSE-CONE-001.md) maps this to our actual receive-only GHoT RADIO-EAR/ATTENTION proposals, Radio House signed-work and TranchNOSE's symbol/echo-clock distinction. It does **not** connect MSU machines, transmit radio, identify a physical endpoint, run GHoT, or establish RF source identity.
 
+## A native two-machine trial has an explicit operator procedure
+
+The [TWO-BODY FIELD 003](../field/) station pins a real GHoT RADIO HOUSE 004 revision, runs its native two-process protocol checks in CI and explains exactly how independent owners could try one authenticated, bounded hash operation on a private approved network. It is **not** a claim that two physical computers have yet been tested or that any university machine has been accessed. The approved runbook is [here](TWO-BODY-FIELD-003.md).
+
 ## A two-week local pilot
 
 Choose **one** host and **one** bounded project. Example: a grocery-organizing working group has a specific volunteer or producer outreach question.
